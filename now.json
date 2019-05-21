@@ -1,6 +1,6 @@
 {
-  "name": "prlint",
-  "alias": "prlint",
+  "name": "prlint-staging",
+  "alias": "prlint-staging",
   "env": {
     "PRIVATE_KEY_B64": "@prlint-private-key"
   },
@@ -9,5 +9,11 @@
     ".git/packed-refs",
     ".git/refs/heads/master",
     "src"
+  ],
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node"
+    }
   ]
 }
